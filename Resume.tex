@@ -1,31 +1,67 @@
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
+% on https://github.com/chaozhao/resume
 
-\documentclass{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+\documentclass{article} 
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{hyperref}
 
 \begin{document} 
+\begin{center}
+\bfseries\Huge{Chao (Ryan) Zhao }
+\end{center}
+\begin{center}
+30 Tranmere Ave, Carnegie, VIC\\
+0422 409 224 \\
+6555985@student.swin.edu.au/ryanczhao@gmail.com \\
+\end{center}
 
-\name{Chao Zhao\\[12pt]}
-\address{\bf  30 Tranmere Avenue\\Carnegie, VIC 3163}
+\section*{EDUCATION}
+\subsection*{Bachelor of Science - Computer Science and Software Engineer}
+2009 - 2012 \\
+Swinburne University of Technology \\
+Hawthorn Campus \\
+\begin{itemize}
+	\item A distinction average achieved throughout Software Development
+	\item Good Knowledge of C/C++, Java, Objective C, .NET, JavaScript, Python
+\end{itemize}
 
-\begin{resume}
-\section{EDUCATION}
-\subsection{Bachelor of Science - Computer Science and Software Engineer}
-\subsection{Diploma of Internet Technology Foundation}
- 
-\section{EMPLOYMENT HISTORY}
-Casual Employment
-\subsection{Saler}
-\subsection{Cleaner}
-\subsection{Pizza Delivery}
+\subsection*{Diploma of Internet Technology Foundation}
+Diploma of Internet Technology Foundation \\
+2008 - 2009 \\
+Swinburne College \\
+\begin{itemize}
+	\item  A high distinction average achieved throughout Information Technology
+\end{itemize}
 
+\section*{EMPLOYMENT HISTORY(Casual)}
 
+\subsection*{Saler}
+2009 Fish Pier\\
+Boxhill Shopping Center\\
+Responsibilities\\
+	\begin{itemize}
+		\item Server customer
+	\item Clean the fish by customer requires
+	\item Stock count
+	\end{itemize}
+\subsection*{Cleaner}
+Cleaner\\
+2010 A.W.C. Clean service\\
+Responsibilities\\
+\begin{itemize}
+	\item  Drive car and carry the clean stuff
+	\item Clean living room and bed room
+\end{itemize}
+\subsection*{Pizza Delivery}
+2011 Lukepapa?s Pizza\\
+Responsibilities\\
+\begin{itemize}
+	\item  Delivery pizza to customer
+\end{itemize}
 
-\section{SKILLS}
-\subsection{Programming}
+\section*{SKILLS}
+\subsection*{Programming}
 	
 	\begin{itemize}
 	\item Highly skills in software development requirement analysis
@@ -39,9 +75,10 @@ Casual Employment
 	\item Understanding the process of Heroku, Amazon EC2 and other PaaS
 	\item Made a simple app on iOS platform with integrated twitter API
 	\item Good understanding of software testing and reliability
+	\item use Latex to write Software Documents and this resume is also written by Latex, the source code is hosted on \url{ https://github/chaozhao/resume}
 	\end{itemize}
 
-\subsection{Computer Skills}
+\subsection*{Computer Skills}
 	\begin{itemize}
 	\item Programming Compliers: XCode, Eclipse, Visual Studio, Code::Block, Quincy 2005, Qt
 	\item Version Control: Git, SVN
@@ -52,7 +89,7 @@ Casual Employment
 	\item Networking: Managing LANs by configure routers to setup different protocol
 	\end{itemize}
 
-\subsection{Leadership skills}
+\subsection*{Leadership skills}
 	
 	\begin{itemize}
 	\item Ability to lead the team to achieve a high common purpose
@@ -64,19 +101,19 @@ Casual Employment
 	\item Working in Agile project (Scrum methodology)
 	\end{itemize}
 	
-\subsection{Communication skills}
+\subsection*{Communication skills}
 	
 	\begin{itemize}
 	\item Ability to understand and communicate with people from different background
 	\end{itemize}
 	
-\subsection{Language skills}
+\subsection*{Language skills}
 
 	\begin{itemize}
 		\item in Chinese, both spoken and written
 	\end{itemize}
 	
-\section{HOBBIES AND INTERESTS}
+\section*{HOBBIES AND INTERESTS}
 
 	\begin{itemize}
 	\item Football
@@ -84,7 +121,7 @@ Casual Employment
 	\item Travel
 	\end{itemize}
 	
-\section{Reference}
+\section*{Reference}
 	Dr Fei-Ching (Diana) Kuo \\
 	Senior Lecturer \\
 	Faculty of Information \& Communication Technologies \\
@@ -94,5 +131,4 @@ Casual Employment
 	Fax: 03 9819 0823 \\
 	Office: EN510e \\
 	
-\end{resume}
 \end{document}
