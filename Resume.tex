@@ -2,10 +2,11 @@
 % latest source code is hosted on https://github.com/chaozhao/resume
 
 \documentclass{article} 
+\usepackage{longtable}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 \usepackage{hyperref}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage{lipsum}
+\usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array, xcolor}
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
@@ -14,6 +15,10 @@
 
 \addtolength{\voffset}{-0.3in} % Adjust the vertical offset - less whitespace at the top of the page
 %\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
+\def\nameskip{\bigskip} % The space after your name at the top
+\def\sectionskip{\medskip} % The space after the heading section
 
 \begin{document} 
 \begin{center}
@@ -26,6 +31,11 @@ Tranmere Ave, Carnegie, VIC, 3163, Australia\\
 \end{center}
 
 \section*{EDUCATION}
+
+\hrule % Horizontal line
+\sectionskip
+
+
 \begin{tabular}{L!{\VRule}R}
 2009--2012&{\bf Bachelor of Science(CSSE) at Swinburne University}\\
 & \begin{itemize}
@@ -40,44 +50,40 @@ Tranmere Ave, Carnegie, VIC, 3163, Australia\\
 \\
 \end{tabular}
 
-\section*{SKILLS}
-\subsection*{Programming}
-	
-	\begin{itemize}
-		\item Highly skills in software development requirement analysis
-		\item Good experiences on part of software development environment
-		\item High Distinction/Distinction grade of C/C++, big fan of Qt, learning it by myself.
-		\item Credit grade of Java
-		\item Credit grade of Introduction of Artificial Intelligence (focus on algorithm and data structure)
-		\item Learn Python, Ruby and PHP by myself
-		\item Use SVN as version control as final year project
-		\item Use Git to manage my source code and push it to Github/bitbucket
-		\item Understanding the process of Heroku, Amazon EC2 and other PaaS
-		\item Made a simple app on iOS platform with integrated twitter API
-		\item Good understanding of software testing and reliability
-		\item use LaTex to write Software Documents and this resume is also written by Latex, the source code is hosted on \url{ https://github/chaozhao/resume}
-	\end{itemize}
+\section*{PROJECTS}
+\hrule % Horizontal line
+\sectionskip
 
-\subsection*{Computer Skills}
-	\begin{itemize}
-		\item Programming Compliers: XCode, Eclipse, Visual Studio, Code::Block, Quincy 2005, Qt
-		\item Version Control: Git, SVN
-		\item Database: Oracle, MySQL, Access
-		\item Operating System: Mac OS, Microsoft Windows, Linux
-		\item Office: Apple iWork, MS Office
-		\item Multimedia: Adobe Photoshop, Dreamweaver
-		\item Networking: Managing LANs by configure routers to setup different protocol
-	\end{itemize}
-	
-\subsection*{Communication skills}
-	
 	\begin{itemize}
 	\item Ability to understand and communicate with people from different background
+	\item Virtual Chemical Environment, a tool to training solider to find chemical concentrations
+	\item A simple iOS app integrated twitter API
+	\item All my projects on Github: \url{https://github.com/chaozhao} (include above and this Latex style resume)
+	\item Deploy a app on Heroku: \url{http://distance-calculator.herokuapp.com/}
+	
+	\end{itemize}
+
+\section*{PROGRAMMING and TECHNOLOGIES}
+\hrule % Horizontal line
+\sectionskip
+
+	\begin{itemize}
+		\item C/C++, Qt, Objective-C, Java, HTML/CSS, Javascript, Latex, Ant, IzPack Installer
+		\item Learning Python, Ruby and PHP by myself
+		\item Credit grade of searching algorithm and data structure
+		\item Database: Oracle, SQLite, Postgresql
+		\item Good skills of Linux terminal command
+		\item Good understanding of software testing and reliability
+		\item Good quality of coding standard
+		\item Database: Oracle, MySQL
+		\item Operating System: Mac OS, Microsoft Windows, Linux
 	\end{itemize}
 	
 \section*{EMPLOYMENT HISTORY(Casual)}
+\hrule % Horizontal line
+\sectionskip
 
-\begin{tabular}{L!{\VRule}R}
+\begin{longtable}{L!{\VRule}R}
 2011&{\bf Pizza Delivery}\\
 & Lukepapa's Pizza 
 \begin{itemize}
@@ -101,9 +107,12 @@ Tranmere Ave, Carnegie, VIC, 3163, Australia\\
 		\item Stock count
 	\end{itemize}
 \\
-\end{tabular}
+\end{longtable}
 
 \section*{REFERENCE}
+\hrule % Horizontal line
+\sectionskip
+
 	Dr Fei-Ching (Diana) Kuo \\
 	Senior Lecturer \\
 	Faculty of Information \& Communication Technologies \\
